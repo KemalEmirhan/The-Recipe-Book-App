@@ -14,3 +14,19 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background {
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: 'Humanst';
+  src: url('../assets/fonts/roboto-light.woff2') format('woff2'), url('../assets/fonts/roboto-light.woff') format('woff');
+  font-weight: lighter;
+  font-style: lighter;
+}
+
+* {
+  font-family: 'Humanst';
+}
+

@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profile Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+ 
+    <ion-item text-center no-lines>
+        <div class="user-image">
+				    <div class="bottom-edit-icon">
+              <ion-icon name="brush-outline"></ion-icon>
+            </div>
+			</div>
+    </ion-item>
+
+    <ion-list no-lines>
+      <button ion-item (click)="buttonClick()">
+       Name
+        <ion-note item-right>Username</ion-note>
+      </button>
+
+      <button ion-item (click)="buttonClick()">
+       Password
+        <ion-note item-right>******</ion-note>
+      </button>
+
+      <ion-note id="note" ion-item>Your email address: test@deneme.com</ion-note>
+
+    </ion-list>
+
+    <button
+      type="button"
+      clear
+      ion-button
+      block
+      (click)="onLogout()">Log out</button>
+
+      
+</ion-content>

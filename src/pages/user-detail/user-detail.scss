@@ -1,0 +1,24 @@
+page-user-detail {
+    .user-image {
+        position: relative;
+        width: 100px;
+        height:100px;
+        margin: 2em auto;
+        background-color: black;
+        border-radius: 6px;
+    }
+
+    .bottom-edit-icon {
+        position: absolute; 
+        width: 24px;
+        height: 24px;
+        bottom: 0;
+        right: 0;
+        background-color: grey;
+        border-bottom-right-radius: 6px;
+    }
+
+    #note {
+        font-size: 10px;
+    }
+}

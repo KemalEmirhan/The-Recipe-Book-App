@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+
+      <div padding>
+        <ion-segment [(ngModel)]="profile">
+          <ion-segment-button value="likes">
+            Likes
+          </ion-segment-button>
+          <ion-segment-button value="cookbooks">
+            CookBooks
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+
+      <ion-buttons end>
+          <button ion-button icon-only [navPush]="settingsPage">
+            <ion-icon name="cog"></ion-icon>
+          </button>
+      </ion-buttons>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+   <div [ngSwitch]="profile">
+       <ion-list *ngSwitchCase="'likes'" no-lines>
+          <ion-item>
+            <p>Likes are coming soon...</p>
+          </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'cookbooks'" no-lines>
+          <ion-item>
+            <p>CookBooks are coming soon...</p>
+          </ion-item>
+        </ion-list>
+   </div>
+
+
+</ion-content>

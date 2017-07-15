@@ -38,8 +38,10 @@ $colors: (
   secondary:  #7ad61d,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  tabsBackgroundColor: #ffffff
 );
+
 
 
 // App iOS Variables
@@ -86,3 +88,4 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+

@@ -1,0 +1,88 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list no-lines>
+    <ion-item>
+      
+      <ion-thumbnail item-start>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png">
+      </ion-thumbnail>
+
+
+      <h2>Username</h2>
+      <ion-note>Edit Profile</ion-note>
+     
+      <button
+        type="button"
+        clear
+        ion-button
+        item-end
+        [navPush]="userDetail">view</button>
+    </ion-item>
+    <hr />
+   
+  </ion-list>
+
+    <ion-list no-lines>
+      <ion-list-header>
+          System
+        </ion-list-header>
+      
+      <button ion-item (click)="openLanguages()">
+        <ion-icon item-start name="globe-outline"></ion-icon>
+          Languages
+        <ion-note item-end>Device language</ion-note>
+      </button>
+
+       <button ion-item [navPush]="measurementPage">
+          <ion-icon item-start name="flask-outline"></ion-icon>
+            Measurement system
+          <ion-note item-end>Metric system</ion-note>
+        </button>
+
+       <button ion-item [navPush]="videoPage">
+          <ion-icon item-start name="videocam-outline"></ion-icon>
+            Video autoplay
+        </button>
+
+       <button ion-item [navPush]="notificationsPage">
+          <ion-icon item-start name="notifications-outline"></ion-icon>
+            Notifications
+        </button>
+
+      <br>
+       <ion-list-header>
+          More
+        </ion-list-header>
+
+        <button ion-item [navPush]="aboutPage">
+          <ion-icon item-start name="alert-outline"></ion-icon>
+            About Us
+        </button>
+
+      <button ion-item (click)="openRecommend()">
+        <ion-icon item-start name="happy-outline"></ion-icon>
+          Recommend app
+      </button>
+
+      <button ion-item (click)="openRateApp()">
+        <ion-icon item-start name="star-outline"></ion-icon>
+          Rate app
+      </button>
+        
+      <button ion-item (click)="openFeedback()">
+        <ion-icon item-start name="notifications-outline"></ion-icon>
+          Feedback
+      </button>
+    </ion-list>
+
+
+</ion-content>
